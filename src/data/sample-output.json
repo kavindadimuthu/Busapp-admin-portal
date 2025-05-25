@@ -1,0 +1,498 @@
+{
+    "total": 6,
+    "limit": 50,
+    "offset": 0,
+    "schedules": [
+        {
+            "schedule_id": "264eccfb-4bdd-4daa-b3bb-7735031f3e43",
+            "valid_from": "2025-05-14T18:30:00.000Z",
+            "valid_until": null,
+            "bus_id": "c486e247-828b-494d-a164-9ffbe623162a",
+            "bus_number": "SP-4321",
+            "bus_name": "Matara Deluxe",
+            "bus_type": "Non-AC",
+            "fare": "600",
+            "is_active": true,
+            "operator_id": "22991921-6d15-47ed-9cc9-df405bcc9dce",
+            "operator_name": "Intercity Travels",
+            "contact_info": "071-9876543",
+            "route_id": "208b5d20-e842-45dd-8a76-59e77b8dae33",
+            "route_name": "Colombo to Matara",
+            "total_distance": 160,
+            "total_duration": 210,
+            "stops": [
+                {
+                    "id": "38cc60d8-af19-4571-8d2e-de5ff407ed65",
+                    "name": "Colombo Fort",
+                    "city": "Colombo",
+                    "location": "POINT(79.8578 6.9344)",
+                    "sequence": 1
+                },
+                {
+                    "id": "cb233cfe-f902-4d63-a3d6-23c1d98ff68b",
+                    "name": "Galle Bus Stand",
+                    "city": "Galle",
+                    "location": "POINT(80.217 6.0367)",
+                    "sequence": 2
+                },
+                {
+                    "id": "b237385b-fdd7-4bf7-bca1-09fbda65283f",
+                    "name": "Weligama",
+                    "city": "Matara",
+                    "location": "POINT(80.4267 5.9731)",
+                    "sequence": 3
+                },
+                {
+                    "id": "b9df94cc-9c80-4427-8c28-49ff37e78331",
+                    "name": "Matara Bus Stand",
+                    "city": "Matara",
+                    "location": "POINT(80.5464 5.9485)",
+                    "sequence": 4
+                }
+            ],
+            "journeys": [
+                {
+                    "id": "75e15b17-0458-447c-b763-e604507f5c89",
+                    "departure_time": "05:45:00",
+                    "arrival_time": "09:15:00",
+                    "days_of_week": [
+                        "Sat",
+                        "Sun"
+                    ],
+                    "stop_times": [
+                        {
+                            "id": "50b2a75f-2038-483c-b13a-7d3517a704d7",
+                            "route_stop_id": "0a8da1bd-225f-4ec6-8f73-b4c3b82de824",
+                            "arrival_time": "07:45:00",
+                            "departure_time": "07:50:00"
+                        },
+                        {
+                            "id": "a91b664b-2744-4137-b1e6-4c21fffb4ccd",
+                            "route_stop_id": "055b626b-6213-416b-822d-2f9c791a302c",
+                            "arrival_time": "09:15:00",
+                            "departure_time": null
+                        },
+                        {
+                            "id": "afc17f38-c4eb-4215-ae1a-80d7b9005657",
+                            "route_stop_id": "cf3aaa5a-85dd-4e43-883a-dcf509266a66",
+                            "arrival_time": "08:30:00",
+                            "departure_time": "08:35:00"
+                        },
+                        {
+                            "id": "c6c5084c-fa30-4c6e-a080-e17115a21732",
+                            "route_stop_id": "762e24d6-dd04-4258-940c-a17e3fd59493",
+                            "arrival_time": null,
+                            "departure_time": "05:45:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "schedule_id": "5364c322-dfc1-463d-a694-5173c56c7cfa",
+            "valid_from": "2025-05-14T18:30:00.000Z",
+            "valid_until": null,
+            "bus_id": "f264156e-8f05-4ff7-ba0d-79adb70dc71b",
+            "bus_number": "WP-5678",
+            "bus_name": "Galle Super",
+            "bus_type": "AC",
+            "fare": "500",
+            "is_active": true,
+            "operator_id": "5561657b-0011-4a36-a6a7-3292bf4f5a0f",
+            "operator_name": "Private Bus Association",
+            "contact_info": "077-1234567",
+            "route_id": "02f82770-295d-4a0e-9b33-8c32e8514e84",
+            "route_name": "Colombo to Galle",
+            "total_distance": 120,
+            "total_duration": 150,
+            "stops": [
+                {
+                    "id": "38cc60d8-af19-4571-8d2e-de5ff407ed65",
+                    "name": "Colombo Fort",
+                    "city": "Colombo",
+                    "location": "POINT(79.8578 6.9344)",
+                    "sequence": 1
+                },
+                {
+                    "id": "63a11855-81f1-47cb-b9ea-53c92e9dea8d",
+                    "name": "Panadura",
+                    "city": "Kalutara",
+                    "location": "POINT(79.9022 6.7136)",
+                    "sequence": 2
+                },
+                {
+                    "id": "a4a0ccab-b82f-4e45-bf7e-09c3bffbe8fc",
+                    "name": "Ambalangoda",
+                    "city": "Galle",
+                    "location": "POINT(80.0552 6.2359)",
+                    "sequence": 3
+                },
+                {
+                    "id": "cb233cfe-f902-4d63-a3d6-23c1d98ff68b",
+                    "name": "Galle Bus Stand",
+                    "city": "Galle",
+                    "location": "POINT(80.217 6.0367)",
+                    "sequence": 4
+                }
+            ],
+            "journeys": [
+                {
+                    "id": "26fe8ccb-0e3d-4855-9212-ad117912b9e4",
+                    "departure_time": "07:30:00",
+                    "arrival_time": "10:00:00",
+                    "days_of_week": [
+                        "Mon",
+                        "Wed",
+                        "Fri"
+                    ],
+                    "stop_times": [
+                        {
+                            "id": "a0187f6d-b948-4a3d-b46a-e4ae26e0058e",
+                            "route_stop_id": "1b7c920c-d5af-4dfa-ba81-2547e1efa11e",
+                            "arrival_time": "08:10:00",
+                            "departure_time": "08:15:00"
+                        },
+                        {
+                            "id": "e2e459f0-c6a7-4c60-b1bc-4a6944ebc74e",
+                            "route_stop_id": "8415a24d-6ed6-494f-a928-7b9fc36ca767",
+                            "arrival_time": null,
+                            "departure_time": "07:30:00"
+                        },
+                        {
+                            "id": "ee19cdad-b955-45dd-b6e6-8381904fe1ce",
+                            "route_stop_id": "384ec2a9-f966-46f4-9ade-61c77094c292",
+                            "arrival_time": "09:20:00",
+                            "departure_time": "09:25:00"
+                        },
+                        {
+                            "id": "ef210b66-8237-4019-9b34-c71b22043ebe",
+                            "route_stop_id": "418bc810-3c2a-4d19-9d7c-1fcb233f274a",
+                            "arrival_time": "10:00:00",
+                            "departure_time": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "schedule_id": "547d14e2-29df-429d-b2b0-3b328ba99c24",
+            "valid_from": "2025-05-14T18:30:00.000Z",
+            "valid_until": null,
+            "bus_id": "767a7514-1029-401f-b56d-45e57be85dcd",
+            "bus_number": "WP-7890",
+            "bus_name": "Negombo Shuttle",
+            "bus_type": "Local",
+            "fare": "150",
+            "is_active": true,
+            "operator_id": "5561657b-0011-4a36-a6a7-3292bf4f5a0f",
+            "operator_name": "Private Bus Association",
+            "contact_info": "077-1234567",
+            "route_id": "c4bc3aab-aad3-428f-b497-cf231b6ef663",
+            "route_name": "Colombo to Negombo",
+            "total_distance": 38,
+            "total_duration": 60,
+            "stops": [
+                {
+                    "id": "38cc60d8-af19-4571-8d2e-de5ff407ed65",
+                    "name": "Colombo Fort",
+                    "city": "Colombo",
+                    "location": "POINT(79.8578 6.9344)",
+                    "sequence": 1
+                },
+                {
+                    "id": "5b17d613-1c86-40d5-bac1-c65508f88681",
+                    "name": "Ja-Ela",
+                    "city": "Gampaha",
+                    "location": "POINT(79.8911 7.0775)",
+                    "sequence": 2
+                },
+                {
+                    "id": "8f773dcf-ce3d-4ad8-b307-041a9b282b01",
+                    "name": "Kochchikade",
+                    "city": "Negombo",
+                    "location": "POINT(79.8497 7.2367)",
+                    "sequence": 3
+                },
+                {
+                    "id": "4797c706-4539-4885-893c-93f53ca79eb0",
+                    "name": "Negombo Bus Stand",
+                    "city": "Negombo",
+                    "location": "POINT(79.8415 7.2083)",
+                    "sequence": 4
+                }
+            ],
+            "journeys": [
+                {
+                    "id": "2d8090eb-914b-4fc4-80b0-bb6ab2ad9ae0",
+                    "departure_time": "08:00:00",
+                    "arrival_time": "09:00:00",
+                    "days_of_week": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri",
+                        "Sat"
+                    ],
+                    "stop_times": [
+                        {
+                            "id": "2e0e7fc2-ed66-4ba0-a23a-9e12bc4ddc9c",
+                            "route_stop_id": "ab2b9f04-33b7-40db-8514-82098405965b",
+                            "arrival_time": null,
+                            "departure_time": "08:00:00"
+                        },
+                        {
+                            "id": "3481f6fd-e383-4b20-bb88-0d38ebae02a2",
+                            "route_stop_id": "ec3621fa-6b42-49f8-a541-31b2f26a3a71",
+                            "arrival_time": "08:25:00",
+                            "departure_time": "08:27:00"
+                        },
+                        {
+                            "id": "733e6c20-7f75-4e20-8c4b-82a71b204520",
+                            "route_stop_id": "1e8d9782-20d3-4c8e-8017-7ccdfea22ba4",
+                            "arrival_time": "08:45:00",
+                            "departure_time": "08:47:00"
+                        },
+                        {
+                            "id": "89379249-e2ae-4675-847f-5a5918bd11bb",
+                            "route_stop_id": "ae990ddd-f29a-4a07-9895-90cb0d96538f",
+                            "arrival_time": "09:00:00",
+                            "departure_time": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "schedule_id": "a8a857aa-0618-4f12-9b47-3751b84000e4",
+            "valid_from": "2025-05-14T18:30:00.000Z",
+            "valid_until": null,
+            "bus_id": "1eb8133b-c310-4e2d-8e01-a91a65b5417c",
+            "bus_number": "NC-2468",
+            "bus_name": "Jaffna Night Rider",
+            "bus_type": "Express",
+            "fare": "1200",
+            "is_active": true,
+            "operator_id": "b0273408-1697-406b-9e2a-7b3758ec3613",
+            "operator_name": "Sri Lanka Transport Board",
+            "contact_info": "011-2581123",
+            "route_id": "216aa773-a624-408f-89c0-579ff78ecd78",
+            "route_name": "Colombo to Jaffna",
+            "total_distance": 400,
+            "total_duration": 540,
+            "stops": [
+                {
+                    "id": "38cc60d8-af19-4571-8d2e-de5ff407ed65",
+                    "name": "Colombo Fort",
+                    "city": "Colombo",
+                    "location": "POINT(79.8578 6.9344)",
+                    "sequence": 1
+                },
+                {
+                    "id": "9b333f81-a82d-49cb-8ef3-dfe17f80953e",
+                    "name": "Anuradhapura",
+                    "city": "Anuradhapura",
+                    "location": "POINT(80.3881 8.3114)",
+                    "sequence": 2
+                },
+                {
+                    "id": "a1c43ba5-92c7-4545-99bc-d3c8958d65bb",
+                    "name": "Vavuniya",
+                    "city": "Vavuniya",
+                    "location": "POINT(80.4936 8.751)",
+                    "sequence": 3
+                },
+                {
+                    "id": "f12bcb29-7e25-4029-b9bb-3a26671bdba2",
+                    "name": "Jaffna Bus Stand",
+                    "city": "Jaffna",
+                    "location": "POINT(80.0088 9.6685)",
+                    "sequence": 4
+                }
+            ],
+            "journeys": [
+                {
+                    "id": "ae240a82-192f-4dd4-8e32-87784996d0d4",
+                    "departure_time": "22:00:00",
+                    "arrival_time": "07:00:00",
+                    "days_of_week": [
+                        "Fri",
+                        "Sat"
+                    ],
+                    "stop_times": [
+                        {
+                            "id": "62e48183-f228-4d2b-8b47-9d58b9ae5299",
+                            "route_stop_id": "6c8595ad-163e-4bc5-80bf-69c79e26acb8",
+                            "arrival_time": "02:30:00",
+                            "departure_time": "02:40:00"
+                        },
+                        {
+                            "id": "92dfc707-e7cc-4bbb-9dc4-31c8b24cf0a3",
+                            "route_stop_id": "ac9f0e5f-b56f-4bbe-8e44-f8dc33bbc49c",
+                            "arrival_time": null,
+                            "departure_time": "22:00:00"
+                        },
+                        {
+                            "id": "c96ed943-7204-4194-a3e7-f2299ff9b051",
+                            "route_stop_id": "956b9371-0672-4a2e-b262-4e68fcf276aa",
+                            "arrival_time": "04:00:00",
+                            "departure_time": "04:10:00"
+                        },
+                        {
+                            "id": "df65d1ed-d492-4e08-b765-8f64249d3fe7",
+                            "route_stop_id": "1104372d-922f-4906-85f5-bc3b0b2a6c8c",
+                            "arrival_time": "07:00:00",
+                            "departure_time": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "schedule_id": "e6d7cf1d-184f-43f4-8a6b-27cddb055257",
+            "valid_from": "2025-05-14T18:30:00.000Z",
+            "valid_until": null,
+            "bus_id": "1c4e4169-81da-4edf-abc6-c5c09f054864",
+            "bus_number": "NA-1234",
+            "bus_name": "Colombo Express",
+            "bus_type": "Express",
+            "fare": "350",
+            "is_active": true,
+            "operator_id": "b0273408-1697-406b-9e2a-7b3758ec3613",
+            "operator_name": "Sri Lanka Transport Board",
+            "contact_info": "011-2581123",
+            "route_id": "4b3c79d9-d3ad-4a77-81d7-8951c003210c",
+            "route_name": "Colombo to Kandy",
+            "total_distance": 115,
+            "total_duration": 180,
+            "stops": [
+                {
+                    "id": "38cc60d8-af19-4571-8d2e-de5ff407ed65",
+                    "name": "Colombo Fort",
+                    "city": "Colombo",
+                    "location": "POINT(79.8578 6.9344)",
+                    "sequence": 1
+                },
+                {
+                    "id": "518f3884-37e7-44f0-bfda-d81f69892ce8",
+                    "name": "Pilimathalawa",
+                    "city": "Kandy",
+                    "location": "POINT(80.5672 7.2472)",
+                    "sequence": 2
+                },
+                {
+                    "id": "df9ef73b-201d-41da-af7f-a117102c2f05",
+                    "name": "Kadugannawa",
+                    "city": "Kandy",
+                    "location": "POINT(80.5186 7.2542)",
+                    "sequence": 3
+                },
+                {
+                    "id": "ab4bd34c-39cb-48f2-af0e-2d78170be4e7",
+                    "name": "Kandy Clock Tower",
+                    "city": "Kandy",
+                    "location": "POINT(80.6385 7.2906)",
+                    "sequence": 4
+                }
+            ],
+            "journeys": [
+                {
+                    "id": "0a09c39b-26dd-41e3-9205-5561f3050bab",
+                    "departure_time": "06:00:00",
+                    "arrival_time": "09:00:00",
+                    "days_of_week": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "stop_times": [
+                        {
+                            "id": "52911428-34a0-445b-a736-8d8b8fff9bb6",
+                            "route_stop_id": "eed86f23-d84c-4f61-9c02-19ad2b905f45",
+                            "arrival_time": null,
+                            "departure_time": "06:00:00"
+                        },
+                        {
+                            "id": "7aca3a6c-99c7-4270-8594-104b57742adf",
+                            "route_stop_id": "bb00394b-ef7b-400d-83f0-3c181b6075f5",
+                            "arrival_time": "08:20:00",
+                            "departure_time": "08:25:00"
+                        },
+                        {
+                            "id": "9b12020a-b77d-472b-8357-23a9f394e7ff",
+                            "route_stop_id": "38a70069-7271-4bdb-9c82-d8a4b1246a87",
+                            "arrival_time": "09:00:00",
+                            "departure_time": null
+                        },
+                        {
+                            "id": "aaf8d973-50f6-4a2e-9227-4244600f3908",
+                            "route_stop_id": "78bf6880-fa88-40f0-9c7f-69f7b8b62a89",
+                            "arrival_time": "08:00:00",
+                            "departure_time": "08:05:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "schedule_id": "8851276d-e303-45fe-b19f-cc05ffff749e",
+            "valid_from": "2025-05-03T18:30:00.000Z",
+            "valid_until": "2025-10-30T18:30:00.000Z",
+            "bus_id": "887f732e-e965-47af-a11b-71e8fa3e6bc0",
+            "bus_number": "ND-4563",
+            "bus_name": "Kirilli",
+            "bus_type": "Non-AC",
+            "fare": "600",
+            "is_active": true,
+            "operator_id": "faca8b82-f4bc-4651-aad9-5bf069565376",
+            "operator_name": "Gamage",
+            "contact_info": "4641655532",
+            "route_id": "86623d72-4dbe-4215-bc91-172871af7841",
+            "route_name": "Embilipitiya to Colombo Night mail",
+            "total_distance": 177,
+            "total_duration": 330,
+            "stops": [
+                {
+                    "id": "445ac76f-b64c-4e23-b927-576bbe4fbacb",
+                    "name": "embdws",
+                    "city": "emb",
+                    "location": "POINT(87.5691 12.6644)",
+                    "sequence": 1
+                },
+                {
+                    "id": "d79df9cb-ea13-4e1a-903e-18c66111e8e9",
+                    "name": "kuruwita halt",
+                    "city": "kuruwita",
+                    "location": "POINT(17.598098 14.6565)",
+                    "sequence": 2
+                },
+                {
+                    "id": "e3337286-42f5-43a2-8d67-efe97efa65c8",
+                    "name": "coldwd",
+                    "city": "col",
+                    "location": "POINT(85.5659 13.5659)",
+                    "sequence": 3
+                }
+            ],
+            "journeys": [
+                {
+                    "id": "ad124ac9-9b18-463d-9c35-fb87a562a61b",
+                    "departure_time": "04:20:00",
+                    "arrival_time": "10:55:00",
+                    "days_of_week": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri",
+                        "Sat",
+                        "Sun"
+                    ],
+                    "stop_times": null
+                }
+            ]
+        }
+    ]
+}

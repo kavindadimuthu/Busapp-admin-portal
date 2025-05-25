@@ -1,0 +1,1 @@
+export const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://busapp-server-production-a2e3.up.railway.app';
