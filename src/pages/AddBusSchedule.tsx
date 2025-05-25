@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
-import Header from '../components/Header.jsx'
+import Header from '../components/Header';
 
 export default function AddBusSchedule() {
   // State for form data
@@ -48,14 +48,18 @@ export default function AddBusSchedule() {
   const [intermediateStops, setIntermediateStops] = useState([{ name: '', city: '', location: 'POINT(0 0)', sequence: 2 }]);
   
   // State for journey stop times
-  const [stopTimes, setStopTimes] = useState([]);
+  // const [stopTimes, setStopTimes] = useState([]);
   
   // State for loading and success message
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState({ type: '', text: '' });
 
   // Handle form field changes
-  const handleChange = (section, field, value) => {
+  const handleChange = (
+    section: 'operator' | 'bus' | 'route' | 'schedule',
+    field: string,
+    value: string | number
+  ) => {
     setFormData(prev => ({
       ...prev,
       [section]: {
@@ -66,7 +70,12 @@ export default function AddBusSchedule() {
   };
 
   // Handle nested field changes
-  const handleNestedChange = (section, subsection, field, value) => {
+  const handleNestedChange = (
+    section: 'route',
+    subsection: 'source_stop' | 'destination_stop',
+    field: string,
+    value: string | number
+  ) => {
     setFormData(prev => ({
       ...prev,
       [section]: {
@@ -80,7 +89,11 @@ export default function AddBusSchedule() {
   };
 
   // Handle journey field changes
-  const handleJourneyChange = (index, field, value) => {
+  const handleJourneyChange = (
+    index: number,
+    field: string,
+    value: string | number | string[]
+  ) => {
     setFormData(prev => {
       const journeys = [...prev.schedule.journeys];
       journeys[index] = { ...journeys[index], [field]: value };
@@ -95,7 +108,10 @@ export default function AddBusSchedule() {
   };
 
   // Handle journey days of week
-  const handleDayToggle = (index, day) => {
+  const handleDayToggle = (
+    index: number,
+    day: string
+  ) => {
     setFormData(prev => {
       const journeys = [...prev.schedule.journeys];
       const journey = journeys[index];
@@ -130,14 +146,18 @@ export default function AddBusSchedule() {
   };
 
   // Handle intermediate stop changes
-  const handleStopChange = (index, field, value) => {
+  const handleStopChange = (
+    index: number,
+    field: string,
+    value: string | number
+  ) => {
     const updatedStops = [...intermediateStops];
     updatedStops[index] = { ...updatedStops[index], [field]: value };
     setIntermediateStops(updatedStops);
   };
 
   // Delete intermediate stop
-  const removeStop = (index) => {
+  const removeStop = (index: number) => {
     const updatedStops = intermediateStops.filter((_, i) => i !== index);
     
     // Resequence the stops
@@ -150,14 +170,20 @@ export default function AddBusSchedule() {
   };
 
   // Set GPS coordinates for a stop
-  const handleLocationChange = (type, index = null, lat, lng) => {
+  const handleLocationChange = (
+    type: 'source' | 'destination' | 'intermediate',
+    index: number | null,
+    lat: number | string,
+    lng: number | string
+  ) => {
     const point = `POINT(${lng} ${lat})`;
     
     if (type === 'source') {
       handleNestedChange('route', 'source_stop', 'location', point);
     } else if (type === 'destination') {
       handleNestedChange('route', 'destination_stop', 'location', point);
-    } else if (type === 'intermediate') {
+    } else if (type === 'intermediate' && index !== null) {
+      // Add null check here ☝️
       const updatedStops = [...intermediateStops];
       updatedStops[index] = { ...updatedStops[index], location: point };
       setIntermediateStops(updatedStops);
@@ -165,7 +191,7 @@ export default function AddBusSchedule() {
   };
 
   // Form submission
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setMessage({ type: '', text: '' });
@@ -233,10 +259,25 @@ export default function AddBusSchedule() {
       });
       setIntermediateStops([{ name: '', city: '', location: 'POINT(0 0)', sequence: 2 }]);
       
-    } catch (error) {
+    } catch (error: unknown) {
+      // Option 1: Type guard
+      let errorMessage = 'An unknown error occurred';
+      
+      if (error && typeof error === 'object' && 'message' in error) {
+        const err = error as { 
+          message: string; 
+          response?: { 
+            data?: { 
+              details?: string 
+            } 
+          } 
+        };
+        errorMessage = err.response?.data?.details || err.message;
+      }
+      
       setMessage({
         type: 'error',
-        text: `Error: ${error.response?.data?.details || error.message}`
+        text: `Error: ${errorMessage}`
       });
     } finally {
       setIsSubmitting(false);

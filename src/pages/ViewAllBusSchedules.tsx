@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { format } from 'date-fns';
-import Header from '../components/Header.jsx'
+import Header from '../components/Header'
 
 interface Stop {
   id: string;
@@ -63,7 +63,8 @@ export default function ViewAllBusSchedules() {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
   const [totalRecords, setTotalRecords] = useState<number>(0);
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const [limit, setLimit] = useState<number>(10);
+  // const [limit, setLimit] = useState<number>(10);
+  const limit = 10;
 
   useEffect(() => {
     fetchSchedules();
